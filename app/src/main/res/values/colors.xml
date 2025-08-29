@@ -3,8 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#FF000000</color>
-    <color name="button_number_background">#212529</color>
     <color name="buttons_container">#FF000000</color>
+    <color name="button_number_background">#212529</color>
     <color name="button_operator_background">#E43F6F</color>
     <color name="display_values_container">#FF000000</color>
 </resources>
