@@ -31,6 +31,21 @@
 
      />
 
+    <Button
+        android:id="@+id/btnClear"
+        android:text="Limpar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gridButtons"
+        style="@style/OperatorButtonStyle"/>
+
 
     <GridLayout
         android:id="@+id/gridButtons"

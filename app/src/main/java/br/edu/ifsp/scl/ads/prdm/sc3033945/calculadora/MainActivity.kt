@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
         attachDecimalClickListener(findViewById(R.id.btnComma))
         attachEqualsClickListener(findViewById(R.id.btnEquals))
-
+        attachClearClickListener(findViewById(R.id.btnClear))
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -165,6 +165,12 @@ class MainActivity : AppCompatActivity() {
                     justCalculated = true
                 }
             }
+        }
+    }
+
+    private fun attachClearClickListener(button: Button) {
+        button.setOnClickListener {
+           clearAll()
         }
     }
 
