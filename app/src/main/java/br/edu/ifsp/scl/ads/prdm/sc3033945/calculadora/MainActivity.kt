@@ -55,4 +55,15 @@ class MainActivity : AppCompatActivity() {
             tvDisplayValues.text = currentValue
         }
     }
+
+    private fun attachOperatorClickListener(button: Button) {
+        button.setOnClickListener {
+            if (currentValue.isNotEmpty()) {
+                previous = currentValue
+                currentValue = ""
+                operator = button.text.toString()
+                tvDisplayValues.text = "$previous $operator"
+            }
+        }
+    }
 }
