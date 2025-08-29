@@ -78,4 +78,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun attachEqualsClickListener(button: Button) {
+        button.setOnClickListener {
+            if (previous.isNotEmpty() && currentValue.isNotEmpty() && operator != null) {
+
+            }
+        }
+    }
 }
