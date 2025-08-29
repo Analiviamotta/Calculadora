@@ -22,6 +22,19 @@ class MainActivity : AppCompatActivity() {
 
         tvDisplayValues = findViewById(R.id.tvDisplayValues)
 
+        setupNumberButtonsClick(
+            findViewById(R.id.btnZero),
+            findViewById(R.id.btnOne),
+            findViewById(R.id.btnTwo),
+            findViewById(R.id.btnThree),
+            findViewById(R.id.btnFour),
+            findViewById(R.id.btnFive),
+            findViewById(R.id.btnSix),
+            findViewById(R.id.btnSeven),
+            findViewById(R.id.btnEight),
+            findViewById(R.id.btnNine)
+        )
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
