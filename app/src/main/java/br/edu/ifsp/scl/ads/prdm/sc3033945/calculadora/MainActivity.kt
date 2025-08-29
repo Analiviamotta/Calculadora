@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     private var operator: String? = ""
     private var currentValue: String = ""
 
-
+    private lateinit var tvDisplayValues: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
