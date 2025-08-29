@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="NumberButtonStyle">
-        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:backgroundTint">@color/button_number_background</item>
 
         <item name="android:textSize">26sp</item>
         <item name="android:textStyle">bold</item>
@@ -12,7 +12,7 @@
     </style>
 
     <style name="OperatorButtonStyle">
-        <item name="android:backgroundTint">@color/button_background</item>
+        <item name="android:backgroundTint">@color/button_operator_background</item>
 
         <item name="android:textSize">32sp</item>
         <item name="android:textStyle">bold</item>
