@@ -29,6 +29,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun setupNumberButtonsClick(vararg buttons: Button) {
+        buttons.forEach { button ->
+            attachNumberClickListener(button)
+        }
+    }
+
+
     private fun attachNumberClickListener(button: Button) {
         button.setOnClickListener {
             currentValue += button.text
