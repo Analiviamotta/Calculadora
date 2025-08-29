@@ -83,8 +83,28 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             if (previous.isNotEmpty() && currentValue.isNotEmpty() && operator != null) {
                 val (first, second) = parseNumbers(previous, currentValue)
+                val result = calculateResult(first, second, operator!!)
+                showResult(result)
             }
+
         }
+    }
+
+    private fun calculateResult(first: Double, second: Double, op: String): Double {
+        return when (op) {
+            "+" -> first + second
+            "-" -> first - second
+            "×", "*" -> first * second
+            "÷", "/" -> if (second != 0.0) first / second else Double.NaN
+            else -> Double.NaN
+        }
+    }
+
+    private fun showResult(result: Double) {
+        tvDisplayValues.text = result.toString()
+        previous = ""
+        currentValue = result.toString()
+        operator = null
     }
 
     private fun parseNumbers(prev: String, current: String): Pair<Double, Double> {
