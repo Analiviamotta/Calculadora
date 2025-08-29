@@ -48,6 +48,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun setupOperatorButtonsClick(vararg buttons: Button) {
+        buttons.forEach { button ->
+            attachOperatorClickListener(button)
+        }
+    }
 
     private fun attachNumberClickListener(button: Button) {
         button.setOnClickListener {
