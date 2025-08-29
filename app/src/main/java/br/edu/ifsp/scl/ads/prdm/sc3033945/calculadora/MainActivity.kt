@@ -35,6 +35,13 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.btnNine)
         )
 
+        setupOperatorButtonsClick(
+            findViewById(R.id.btnSum),
+            findViewById(R.id.btnSubtraction),
+            findViewById(R.id.btnMultiplication),
+            findViewById(R.id.btnDivision)
+        )
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
