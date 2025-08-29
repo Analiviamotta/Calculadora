@@ -7,23 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:orientation="vertical"
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-
-    android:background="@color/background"
-
-    android:paddingVertical="24dp"
-    android:paddingHorizontal="16dp"
-    >
 
     <TextView
         android:id="@+id/tvDisplayValues"
@@ -37,7 +21,12 @@
         android:textColor="@color/white"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gridButtons"
 
         android:padding="16dp"
         android:background="@color/display_values_container"
@@ -45,18 +34,19 @@
      />
 
     <GridLayout
+        android:id="@+id/gridButtons"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        app:layout_constraintTop_toBottomOf="@id/tvDisplayValues"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
+        app:layout_constraintBottom_toBottomOf="parent"
 
 
         android:background="@color/buttons_container"
+
+        android:gravity="center"
 
         android:rowCount="4"
         android:columnCount="4"
@@ -85,6 +75,6 @@
         <Button android:id="@+id/btnEquals" android:text="@string/equals" style="@style/OperatorButtonStyle"/>
     </GridLayout>
 
-</LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
