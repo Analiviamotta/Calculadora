@@ -117,11 +117,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showResult(result: Double) {
-        tvDisplayValues.text = result.toString()
-        previous = ""
-        currentValue = result.toString()
-        operator = null
+        if (result.isNaN()) {
+            tvDisplayValues.text = ""
+        } else {
+            tvDisplayValues.text = result.toString()
+            previous = ""
+            currentValue = result.toString()
+            operator = null
+        }
     }
+
 
     private fun parseNumbers(prev: String, current: String): Pair<Double, Double> {
         val normalizedPrev = prev.replace(".", "").replace(",", ".")
