@@ -214,7 +214,7 @@
             style="@style/NumberButtonStyle"/>
         <Button
             android:id="@+id/btnComma"
-            android:text="@string/comma"
+            android:text="@string/point"
 
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"

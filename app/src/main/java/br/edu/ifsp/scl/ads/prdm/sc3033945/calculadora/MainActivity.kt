@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private var previous: String = ""
-    private var operator: String? = ""
+    private var operator: String? = null
     private var currentValue: String = ""
 
     private lateinit var tvDisplayValues: TextView
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.btnDivision)
         )
 
+        attachDecimalClickListener(findViewById(R.id.btnComma))
         attachEqualsClickListener(findViewById(R.id.btnEquals))
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -52,21 +53,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupNumberButtonsClick(vararg buttons: Button) {
-        buttons.forEach { button ->
-            attachNumberClickListener(button)
-        }
+        buttons.forEach { button -> attachNumberClickListener(button) }
     }
 
     private fun setupOperatorButtonsClick(vararg buttons: Button) {
-        buttons.forEach { button ->
-            attachOperatorClickListener(button)
-        }
+        buttons.forEach { button -> attachOperatorClickListener(button) }
     }
 
     private fun attachNumberClickListener(button: Button) {
         button.setOnClickListener {
             currentValue += button.text
-            tvDisplayValues.text = currentValue
+            tvDisplayValues.text = if (operator == null) {
+                currentValue
+            } else {
+                "$previous $operator $currentValue"
+            }
         }
     }
 
@@ -81,6 +82,20 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun attachDecimalClickListener(button: Button) {
+        button.setOnClickListener {
+
+            if (!currentValue.contains(".")) {
+                currentValue += "."
+                tvDisplayValues.text = if (operator == null) {
+                    currentValue
+                } else {
+                    "$previous $operator $currentValue"
+                }
+            }
+        }
+    }
+
     private fun attachEqualsClickListener(button: Button) {
         button.setOnClickListener {
             if (previous.isNotEmpty() && currentValue.isNotEmpty() && operator != null) {
@@ -88,7 +103,6 @@ class MainActivity : AppCompatActivity() {
                 val result = calculateResult(first, second, operator!!)
                 showResult(result)
             }
-
         }
     }
 
@@ -110,6 +124,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun parseNumbers(prev: String, current: String): Pair<Double, Double> {
-        return prev.toDouble() to current.toDouble()
+        val normalizedPrev = prev.replace(".", "").replace(",", ".")
+        val normalizedCurrent = current.replace(".", "").replace(",", ".")
+        return normalizedPrev.toDouble() to normalizedCurrent.toDouble()
     }
 }
