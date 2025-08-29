@@ -50,12 +50,23 @@
 
         app:layout_constraintTop_toBottomOf="@id/tvDisplayValues"
 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
         android:background="@color/buttons_container"
 
         android:rowCount="5"
         android:columnCount="4"
+        android:useDefaultMargins="true"
+
+
         >
 
+        <Button android:id="@+id/btnSeven" android:text="@string/seven" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btnEight" android:text="@string/eight" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btnNine" android:text="@string/nine" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btnDivision" android:text="@string/division" style="@style/OperatorButtonStyle"/>
     </GridLayout>
 
 </LinearLayout>

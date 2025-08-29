@@ -3,6 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#ffcad4</color>
-    <color name="display_values_container">#E43F6F</color>
+    <color name="number_button">#212529</color>
     <color name="buttons_container">#7F96FF</color>
+    <color name="button_background">#E43F6F</color>
+    <color name="display_values_container">#E43F6F</color>
 </resources>

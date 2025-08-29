@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Calculadora</string>
     <string name="zero">0</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="division">÷</string>
 </resources>
