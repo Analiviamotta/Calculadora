@@ -31,6 +31,7 @@
 
      />
 
+
     <GridLayout
         android:id="@+id/gridButtons"
 
@@ -214,7 +215,7 @@
             style="@style/NumberButtonStyle"/>
         <Button
             android:id="@+id/btnComma"
-            android:text="@string/point"
+            android:text="@string/comma"
 
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
