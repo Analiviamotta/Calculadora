@@ -82,8 +82,12 @@ class MainActivity : AppCompatActivity() {
     private fun attachEqualsClickListener(button: Button) {
         button.setOnClickListener {
             if (previous.isNotEmpty() && currentValue.isNotEmpty() && operator != null) {
-
+                val (first, second) = parseNumbers(previous, currentValue)
             }
         }
+    }
+
+    private fun parseNumbers(prev: String, current: String): Pair<Double, Double> {
+        return prev.toDouble() to current.toDouble()
     }
 }
