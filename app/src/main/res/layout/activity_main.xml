@@ -53,26 +53,204 @@
         android:useDefaultMargins="true"
         >
 
-        <Button android:id="@+id/btnSeven" android:text="@string/seven" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnEight" android:text="@string/eight" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnNine" android:text="@string/nine" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnDivision" android:text="@string/division" style="@style/OperatorButtonStyle"/>
 
-        <Button android:id="@+id/btnFour" android:text="@string/four" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnFive" android:text="@string/five" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnSix" android:text="@string/six" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnMultiplication" android:text="@string/multiplication" style="@style/OperatorButtonStyle"/>
+        <Button
+            android:id="@+id/btnSeven"
+            android:text="@string/seven"
 
-        <Button android:id="@+id/btnOne" android:text="@string/one" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnTwo" android:text="@string/two" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnThree" android:text="@string/three" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnSubtraction" android:text="@string/subtraction" style="@style/OperatorButtonStyle"/>
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnEight"
+            android:text="@string/eight"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnNine"
+            android:text="@string/nine"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnDivision"
+            android:text="@string/division"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/OperatorButtonStyle"/>
 
 
-        <Button android:id="@+id/btnZero" android:text="@string/zero" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnComma" android:text="@string/comma" style="@style/NumberButtonStyle"/>
-        <Button android:id="@+id/btnSum" android:text="@string/sum" style="@style/OperatorButtonStyle"/>
-        <Button android:id="@+id/btnEquals" android:text="@string/equals" style="@style/OperatorButtonStyle"/>
+        <Button
+            android:id="@+id/btnFour"
+            android:text="@string/four"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnFive"
+            android:text="@string/five"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnSix"
+            android:text="@string/six"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnMultiplication"
+            android:text="@string/multiplication"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/OperatorButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btnOne"
+            android:text="@string/one"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnTwo"
+            android:text="@string/two"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnThree"
+            android:text="@string/three"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnSubtraction"
+            android:text="@string/subtraction"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/OperatorButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btnZero"
+            android:text="@string/zero"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnComma"
+            android:text="@string/comma"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/NumberButtonStyle"/>
+        <Button
+            android:id="@+id/btnSum"
+            android:text="@string/sum"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/OperatorButtonStyle"/>
+        <Button
+            android:id="@+id/btnEquals"
+            android:text="@string/equals"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            style="@style/OperatorButtonStyle"/>
+
     </GridLayout>
 
 
