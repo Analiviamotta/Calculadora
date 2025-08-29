@@ -18,11 +18,23 @@
 
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
+
     android:background="@color/background"
 
-
-    android:padding="16dp"
+    android:paddingVertical="24dp"
+    android:paddingHorizontal="16dp"
     >
+
+    <TextView
+        android:id="@+id/tvDisplayValues"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="16dp"
+        android:background="@color/display_values_container"
+
+     />
 
 </LinearLayout>
 
