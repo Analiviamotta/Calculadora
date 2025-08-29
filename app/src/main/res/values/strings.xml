@@ -5,4 +5,8 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="division">÷</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="multiplication">x</string>
 </resources>
