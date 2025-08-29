@@ -13,4 +13,7 @@
     <string name="two">2</string>
     <string name="three">3</string>
     <string name="subtraction">-</string>
+    <string name="comma">,</string>
+    <string name="sum">+</string>
+    <string name="equals">=</string>
 </resources>
