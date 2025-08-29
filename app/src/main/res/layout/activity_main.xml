@@ -28,6 +28,14 @@
     <TextView
         android:id="@+id/tvDisplayValues"
 
+        android:text="@string/zero"
+
+        android:gravity="end"
+
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
